@@ -5,11 +5,23 @@
 
 	</head>
 
-	<body>
+	<body onload="initialize();">
+        <div id="header">
+            <h3>Basic Scene with flying camera</h3>
+            <p>
+            Move: w a s d r f<span class="blue">|</span>
+            Look: arrow keys / drag mouse<span class="blue">|</span>
+            Roll: q e
+            </p>
+        </div>
 
-	</body>
+        <div id="viewport"></div>
+
+    </body>
+
 	<script type="text/javascript" src="js/three.min.js"></script>
 	<script type="text/javascript" src="js/ColladaLoader.js"></script>
-	<script type="text/javascript" src="js/application.js"></script>
 	<script type="text/javascript" src="js/flight.js"></script>
+	
+	<script type="text/javascript" src="js/application.js"></script>
 </html>
