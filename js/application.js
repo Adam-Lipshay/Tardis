@@ -12,7 +12,9 @@ function init() {
     scene = new THREE.Scene();
 
     camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
-    camera.position.z = 500;
+    camera.position.z = 200;
+    camera.position.x = 110;
+    camera.position.y = 0;
     scene.add(camera);
 
     // cubeGeometry = new THREE.CubeGeometry(200, 200, 200);
