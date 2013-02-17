@@ -83,8 +83,8 @@ function initialize() {
         scene.add(tardis);
         update();
 
-        window.setTimeout(firstChange,5000);
-        window.setTimeout(secondChange,10000);
+        window.setTimeout(firstChange,10000);
+        window.setTimeout(secondChange,10100);
     });
 
     
@@ -93,13 +93,14 @@ function initialize() {
 
 function firstChange() {
 
-    rotationSpeed = -0.05;
+    rotationSpeed = -0.001;
 
 }
 
 function secondChange() {
 
     rotationSpeed = 0.07;
+    rotation = -1;
 
 }
 
@@ -116,8 +117,8 @@ function update() {
 
     // Lets try moving the camera
     tardis.rotation.x = rotation;
-    tardis.rotation.y = rotation;
-    tardis.rotation.z = rotation;
+//    tardis.rotation.y = rotation;
+//    tardis.rotation.z = rotation;
 
     rotation = rotation + rotationSpeed;
 
